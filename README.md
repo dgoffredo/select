@@ -26,8 +26,8 @@ What
 which does multiple-[event][racket-event] synchronization in a syntax
 reminiscent of Go.
 
-More
-----
+How
+---
 ### Example
 ```racket
 (define c1 (make-channel))
@@ -62,6 +62,8 @@ $ cd select
 $ raco pkg install
 ```
 
+More
+----
 ### Grammar
 `select` evaluates to the result of executing exactly one of its `<body>`
 forms. `select` is of the form:
