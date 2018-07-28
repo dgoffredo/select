@@ -6,7 +6,7 @@
 (require (for-syntax threading)) ; ~> and ~>> macros
 
 (define-syntax (strip-arrow stx)
-  ; If the specified syntax is a symbol that beings with the two characters
+  ; If the specified syntax is a symbol that begins with the two characters
   ; "<-", then return the syntax after having stripped that prefix. Otherwise,
   ; return the syntax unmodified.
   (syntax-case stx ()
