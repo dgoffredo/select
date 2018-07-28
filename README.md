@@ -96,7 +96,7 @@ default                       ; (7)
 Additionally, the `after` macro provides convenient syntax for specifying
 timeouts. `after` returns an event that becomes available after the
 specified timeout. The timeout is expressed in some units. `after` is of the
-form `(after <number> <unit>)`, where `<number>` is a number and `<units>`
+form `(after <number> <units>)`, where `<number>` is a number and `<units>`
 is one of `days`, `hours`, `minutes`, `seconds`, `milliseconds`,
 `microseconds`, or `nanoseconds`. For example,
 ```racket
@@ -108,7 +108,7 @@ is one of `days`, `hours`, `minutes`, `seconds`, `milliseconds`,
   [(after (* 4 0.03) days)         "four"]
   [(after (expt 2 12) nanoseconds) "five"])
 ```
-evaluates to `1`.
+evaluates to `"one"`.
 
 [racket-sync]: https://docs.racket-lang.org/reference/sync.html#%28def._%28%28quote._~23~25kernel%29._sync%29%29
 [go-select]: https://tour.golang.org/concurrency/5
